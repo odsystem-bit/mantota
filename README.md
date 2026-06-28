@@ -160,8 +160,8 @@ Une démo publique sera disponible prochainement dans le dossier [`demo/`](demo/
 
 - **Site web** : [À compléter](https://)
 - **Documentation** : [`docs/`](docs/)
-- **Portfolio** : [stanislas-nouemou](https://github.com/stanislas-nouemou)
-- **GitHub** : [mantota](https://github.com/stanislas-nouemou/mantota)
+- **Portfolio** : [stanislas-nouemou](https://github.com/odsystem-bit/stanislas-nouemou)
+- **GitHub** : [mantota](https://github.com/odsystem-bit/mantota)
 
 ---
 
@@ -171,7 +171,7 @@ Pour toute question, partenariat ou opportunité d'investissement :
 
 - **Email** : [À compléter](mailto:)
 - **LinkedIn** : [À compléter](https://linkedin.com/in/)
-- **GitHub** : [@stanislas-nouemou](https://github.com/stanislas-nouemou)
+- **GitHub** : [@odsystem-bit](https://github.com/odsystem-bit)
 
 ---
 
