@@ -161,7 +161,8 @@ Consulter [`ROADMAP.md`](ROADMAP.md) et [`docs/ai-roadmap.md`](docs/ai-roadmap.m
 > Les captures d'écran seront ajoutées progressivement dans le dossier [`assets/screenshots/`](assets/screenshots/).
 
 <div align="center">
-  <img src="assets/screenshots/placeholder.svg" alt="Dashboard placeholder" width="80%" />
+  <img src="assets/screenshots/Capture d'écran 2026-06-10 205317.png" alt="Dashboard placeholder" width="80%" />
+  <img src="assets/screenshots/Capture d'écran 2026-06-10 205317.png" alt="Dashboard placeholder" width="80%" />
   <p><em>Dashboard Mantota — placeholder</em></p>
 </div>
 
