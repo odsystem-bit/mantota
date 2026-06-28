@@ -20,6 +20,7 @@ L'objectif d'OD IA dans Mantota est de :
 - **Sécuriser** la plateforme via la détection de fraudes et la vérification automatisée.
 - **Accompagner** les utilisateurs avec un assistant IA conversationnel et vocal.
 - **Democratiser** le commerce en rendant l'achat et la vente accessibles par la voix, notamment via WhatsApp.
+- **Collecter** les interactions utilisateurs via l'assistant **OEIL INTELLIGENTE (OI)** pour entraîner OD IA sur les données commerciales réelles de Mantota.
 
 ---
 
@@ -145,11 +146,21 @@ L'objectif d'OD IA dans Mantota est de :
 - Mise en place d'un pipeline de collecte et d'export de données
 - Définition des métriques et indicateurs de performance
 
+### Phase 0a — Collecte de données via OEIL INTELLIGENTE (v2.1a, en développement)
+
+- Intégration du widget od-chatbot.js sur les pages publiques de mantota.com.
+- Configuration du **contexte produit mantota** dans l'assistant OI.
+- Envoi automatique de chaque conversation vers le **OD Data Collector** (POST /api/collector/conversations).
+- Collecte de contributions vocales pour enrichir le dataset oral (POST /api/collector/voice).
+- Stockage des données : messages, prompts, réponses, métadonnées, IP, User-Agent, temps de traitement.
+- Objectif : constituer un dataset de plusieurs milliers d'échanges commerciaux avant le fine-tuning d'OD IA.
+
 ### Phase 1 — Fondations IA (Mois 1-6)
 
-- Collecte structurée des données
+- Collecte structurée des données (interactions OI + données plateforme).
 - Anonymisation et conformité
 - Choix des modèles et APIs
+- Définition du dataset d'entraînement OD IA : FAQ, conversations, commandes, disputes, produits, marchés.
 
 ### Phase 2 — Recommandation et scoring (Mois 6-12)
 
@@ -192,7 +203,8 @@ L'objectif d'OD IA dans Mantota est de :
 ## Prochaines étapes
 
 - [ ] Finaliser la migration infrastructure v2.0
-- [ ] Définir le pipeline de collecte et de traitement des données
+- [ ] Définir le pipeline de collecte et de traitement des données (via OI + Mantota)
+- [ ] Déployer le widget OEIL INTELLIGENTE sur mantota.com
 - [ ] Choisir les modèles et les APIs
 - [ ] Concevoir l'architecture des services IA
 - [ ] Mettre en place un environnement de test

@@ -51,6 +51,19 @@ Cette feuille de route présente les grandes étapes de développement de Mantot
 
 ---
 
+## v2.1a — Collecte de données via OEIL INTELLIGENTE (OI)
+
+**Objectif** : déployer un assistant conversationnel sur mantota.com pour guider les utilisateurs et collecter des données pour entraîner OD IA.
+
+- [ ] Intégration du widget od-chatbot.js sur les pages publiques du site web
+- [ ] Activation du contexte produit mantota dans OEIL INTELLIGENTE
+- [ ] Envoi automatique des conversations au **OD Data Collector** (POST /api/collector/conversations)
+- [ ] Collecte de contributions vocales via le site web (préparation WhatsApp vocal)
+- [ ] Consentement explicite des utilisateurs et anonymisation des données sensibles
+- [ ] Objectif : 5 000+ conversations collectées avant le fine-tuning d'OD IA
+
+---
+
 ## v2.1 — Intelligence artificielle — OD IA
 
 **Objectif** : automatiser, recommander, sécuriser et démocratiser le commerce avec l'IA souveraine OD IA.
@@ -64,6 +77,7 @@ Cette feuille de route présente les grandes étapes de développement de Mantot
 - [ ] Commerce vocal WhatsApp pour les analphabètes
 - [ ] Guide marché local et comparaison produits par IA
 - [ ] Intégration des données Mantota dans OD IA (catalogues, boutiques, commandes)
+- [ ] Fine-tuning d'OD IA sur les conversations collectées via OEIL INTELLIGENTE
 
 ---
 

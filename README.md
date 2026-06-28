@@ -46,6 +46,7 @@ Mantota combine :
 - Un **système KYC** et de scoring pour la confiance entre acteurs.
 - Un **wallet intégré** avec dépôts, retraits et commissions.
 - Une **roadmap IA** pilotée par **OD IA**, l'intelligence artificielle commerciale souveraine d'OD Systeme.
+- Un **assistant embarqué OEIL INTELLIGENTE (OI)** sur le site web pour guider vendeurs, influenceurs et acheteurs, et **collecter les conversations pour entraîner OD IA**.
 
 ---
 
@@ -158,6 +159,7 @@ Pour plus de détails, consulter [`docs/architecture.md`](docs/architecture.md).
 | **v1.x** | Stabilisation, optimisations, 120+ utilisateurs actifs | ✅ En cours |
 | **v2.0** | Scalabilité, migration VPS/cloud, refonte UX, API publique | En développement |
 | **v2.1** | OD IA : assistant commercial souverain, matching, scoring, modération, voix/WhatsApp | À venir |
+| **v2.1a** | Intégration OEIL INTELLIGENTE (OI) widget sur mantota.com + collecte de données pour entraînement OD IA | En développement |
 | **v2.2** | Expansion régionale (CI, Sénégal, Togo, Cameroun) | À venir |
 
 Consulter [`ROADMAP.md`](ROADMAP.md) et [`docs/ai-roadmap.md`](docs/ai-roadmap.md) pour le détail.

@@ -121,6 +121,18 @@ Ce document détaille les fonctionnalités de Mantota v1.0, déployées en produ
 
 Mantota intégrera **OD IA**, l'intelligence artificielle commerciale souveraine d'OD Systeme.
 
+### Phase de collecte de données (v2.1a) — OEIL INTELLIGENTE (OI)
+
+Avant le déploiement complet d'OD IA, Mantota embarque un **assistant conversationnel OEIL INTELLIGENTE (OI)** sur le site web et dans l'app mobile. Cet assistant, piloté temporairement par GPT-4o-mini, permet de guider les utilisateurs et de **collecter les conversations pour entraîner OD IA**.
+
+- **Widget embarquable** (od-chatbot.js) sur toutes les pages publiques de mantota.com.
+- **Contexte produit mantota** dans OI : système prompt spécialisé pour le social commerce, les vendeurs, influenceurs et acheteurs.
+- **Collecte de données** : chaque question, réponse et métadonnée est envoyée au **OD Data Collector** et stockée en base (Conversation).
+- **Contributions vocales** : les utilisateurs peuvent enregistrer des questions vocales (futur WhatsApp vocal) pour enrichir le dataset oral.
+- **Utilisation des données** : fine-tuning et entraînement d'OD IA sur les conversations commerciales, questions récurrentes, noms de produits, marchés, Mobile Money et disputes.
+
+### Capacités d'OD IA (v2.1)
+
 - **Assistant commercial conversationnel** : aide à la création de campagnes, de boutiques et de fiches produits.
 - **Commande vocale par IA** : l'utilisateur décrit son besoin, OD IA sélectionne le produit/vendeur, remplit le panier et initie le paiement Mobile Money.
 - **WhatsApp vocal** : accessible aux personnes analphabètes — vente et achat par messages vocaux.
