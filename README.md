@@ -162,7 +162,7 @@ Consulter [`ROADMAP.md`](ROADMAP.md) et [`docs/ai-roadmap.md`](docs/ai-roadmap.m
 
 <div align="center">
   <img src="assets/screenshots/Capture d'écran 2026-06-10 205317.png" alt="Dashboard placeholder" width="80%" />
-  <img src="assets/screenshots/Capture d'écran 2026-06-10 205317.png" alt="Dashboard placeholder" width="80%" />
+  <img src="assets/screenshots/Capture d'écran 2026-06-09 211130.png" alt="Dashboard placeholder" width="80%" />
   <p><em>Dashboard Mantota — placeholder</em></p>
 </div>
 
