@@ -164,6 +164,14 @@ Consulter [`ROADMAP.md`](ROADMAP.md) et [`docs/ai-roadmap.md`](docs/ai-roadmap.m
    <p><em>Dashboard Mantota — placeholder</em></p>
   <img src="assets/screenshots/Capture d'écran 2026-06-09 211130.png" alt="Dashboard placeholder" width="80%" />
     <img src="assets/screenshots/Capture d'écran 2026-06-09 211245.png" alt="Dashboard placeholder" width="80%" />
+     <img src="assets/screenshots/Capture d'écran 2026-06-09 215808.png" alt="Dashboard placeholder" width="80%" />
+      <img src="assets/screenshots/Capture d'écran 2026-06-09 211546.png" alt="Dashboard placeholder" width="80%" />
+       <img src="assets/screenshots/Capture d'écran 2026-06-09 211702.png" alt="Dashboard placeholder" width="80%" />
+        <img src="assets/screenshots/Capture d'écran 2026-06-09 215833.png" alt="Dashboard placeholder" width="80%" />
+         <img src="assets/screenshots/Capture d'écran 2026-06-09 215846.png" alt="Dashboard placeholder" width="80%" />
+          <img src="assets/screenshots/Capture d'écran 2026-06-09 215931.png" alt="Dashboard placeholder" width="80%" />
+           <img src="assets/screenshots/Capture d'écran 2026-06-09 211521.png" alt="Dashboard placeholder" width="80%" />
+            <img src="assets/screenshots/Capture d'écran 2026-06-09 211216.png" alt="Dashboard placeholder" width="80%" />
 
    <p><em>Prochaine mise a jour</em></p>
   <img src="assets/screenshots/Capture d'écran 2026-06-10 205317.png" alt="Dashboard placeholder" width="80%" />
