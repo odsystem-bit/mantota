@@ -19,7 +19,8 @@ Cette feuille de route présente les grandes étapes de développement de Mantot
 - [x] Paiement Mobile Money multigateway
 - [x] E-commerce avec escrow
 - [x] Studio UGC pour les créateurs VIP
-- [x] Feed social avec likes, commentaires, lives
+- [x] Feed social / social commerce avec posts, likes, commentaires guest-first, lives et achat direct depuis le feed
+- [x] API publique v1 pour le feed
 - [x] Programme d'ambassadeurs et de parrainage
 - [x] Déploiement en production sur [mantota.com](https://mantota.com)
 
@@ -50,15 +51,19 @@ Cette feuille de route présente les grandes étapes de développement de Mantot
 
 ---
 
-## v2.1 — Intelligence artificielle
+## v2.1 — Intelligence artificielle — OD IA
 
-**Objectif** : automatiser, recommander et sécuriser.
+**Objectif** : automatiser, recommander, sécuriser et démocratiser le commerce avec l'IA souveraine OD IA.
 
 - [ ] Recommandation de créateurs pour les campagnes
 - [ ] Scoring des campagnes et prédiction de performance
 - [ ] Modération automatique des contenus et KYC
-- [ ] Assistant IA pour les vendeurs et influenceurs
+- [ ] Assistant IA conversationnel pour les vendeurs et influenceurs
 - [ ] Détection de fraudes avancée
+- [ ] Commande automatique par IA (texte + voix)
+- [ ] Commerce vocal WhatsApp pour les analphabètes
+- [ ] Guide marché local et comparaison produits par IA
+- [ ] Intégration des données Mantota dans OD IA (catalogues, boutiques, commandes)
 
 ---
 

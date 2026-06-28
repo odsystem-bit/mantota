@@ -8,15 +8,18 @@ Ce document présente la vision et les étapes d'intégration de l'intelligence 
 
 Mantota v1.0 est en production sur [mantota.com](https://mantota.com) avec environ 120 utilisateurs actifs. Les fonctionnalités IA sont planifiées pour la **v2.1**, après la migration vers une infrastructure scalable en **v2.0**.
 
-## Vision IA
+## Vision IA — OD IA
 
-L'objectif de Mantota est d'utiliser l'intelligence artificielle pour :
+Mantota intégrera **OD IA**, l'intelligence artificielle commerciale souveraine d'OD Systeme, pour transformer le commerce en Afrique de l'Ouest.
+
+L'objectif d'OD IA dans Mantota est de :
 
 - **Automatiser** les tâches répétitives (matching, modération, scoring).
 - **Recommander** les meilleurs acteurs pour chaque campagne ou transaction.
 - **Prédire** les performances et les tendances du marché.
 - **Sécuriser** la plateforme via la détection de fraudes et la vérification automatisée.
-- **Accompagner** les utilisateurs avec un assistant IA.
+- **Accompagner** les utilisateurs avec un assistant IA conversationnel et vocal.
+- **Democratiser** le commerce en rendant l'achat et la vente accessibles par la voix, notamment via WhatsApp.
 
 ---
 
@@ -82,16 +85,55 @@ L'objectif de Mantota est d'utiliser l'intelligence artificielle pour :
 
 ---
 
+## Cas d'usage commerciaux OD IA
+
+### 8. Assistant commercial conversationnel
+
+**Problème** : les vendeurs et influenceurs débutants ne savent pas optimiser leurs campagnes et boutiques.
+
+**Solution** : OD IA répond aux questions, suggère des améliorations, génère des descriptions de produits et des scripts de contenu.
+
+### 9. Commande automatique par IA
+
+**Problème** : le processus d'achat en ligne reste complexe pour certains utilisateurs.
+
+**Solution** : l'utilisateur décrit son besoin à OD IA (texte ou voix). L'IA sélectionne le meilleur produit/vendeur, remplit le panier, calcule la livraison et initie le paiement Mobile Money après confirmation.
+
+### 10. Commerce vocal WhatsApp pour analphabètes
+
+**Problème** : des millions de commerçants et clients en Afrique de l'Ouest ne savent pas lire ou écrire.
+
+**Solution** : OD IA intégrée à WhatsApp permet de vendre et d'acheter par messages vocaux. Exemples :
+- *"Je vends des sacs en pagne à 5 000 francs, j'ai 10 pièces"* → OD IA crée la fiche produit.
+- *"Je cherche un téléphone pas cher à Cotonou"* → OD IA propose des produits avec photos et prix.
+- *"Oui, je prends celui-là"* → OD IA génère le paiement Mobile Money et le suivi de commande.
+
+### 11. Guide marché et commerce local
+
+**Problème** : difficile de savoir quoi acheter et où, surtout dans les marchés physiques.
+
+**Solution** : OD IA oriente l'utilisateur vers les vendeurs Mantota disponibles près de lui, compare les stocks et les prix, et suggère les meilleures options.
+
+### 12. Avis et confiance produit par IA
+
+**Problème** : les utilisateurs craignent les arnaques et les produits de mauvaise qualité.
+
+**Solution** : OD IA analyse les retours, les disputes, les notes et les descriptions pour attribuer un score qualité/prix et alerter sur les risques.
+
+---
+
 ## Stack technique envisagée
 
 | Composant | Technologie | Usage |
 | :--- | :--- | :--- |
-| LLM | OpenAI API / modèles open source | Assistant, recommandation textuelle |
+| LLM | Modèles open source / API avec anonymisation | Assistant, recommandation textuelle |
 | Vision | OpenAI Vision / CLIP | Modération des images et vidéos |
+| ASR / TTS | Whisper / modèles vocaux locaux | Transcription et synthèse vocale |
 | OCR | Tesseract / AWS Textract | Extraction KYC |
 | ML | Python, scikit-learn, FastAPI | Scoring, prédiction, fraude |
+| WhatsApp | WhatsApp Business API | Canal vocal et conversationnel |
 | Données | MySQL / PostgreSQL, exports analytics | Entraînement et inférence |
-| Infrastructure | Docker, serveur dédié | Hébergement des services IA |
+| Infrastructure | Docker, serveur dédié, hébergement régional | Hébergement souverain des services IA |
 
 ---
 
@@ -126,6 +168,14 @@ L'objectif de Mantota est d'utiliser l'intelligence artificielle pour :
 - Assistant IA pour vendors et influencers
 - Prédiction des tendances de marché
 - Détection avancée de fraudes
+
+### Phase 5 — OD IA commerciale vocale (Mois 24-36)
+
+- Intégration WhatsApp Business API avec OD IA
+- Commande automatique par IA (texte + voix)
+- Commerce vocal pour analphabètes
+- Guide marché local et comparaison produits par IA
+- Déploiement progressif par pays selon les langues locales
 
 ---
 

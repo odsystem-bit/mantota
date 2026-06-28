@@ -72,12 +72,16 @@ Ce document détaille les fonctionnalités de Mantota v1.0, déployées en produ
 - Paiement automatique après validation.
 - Commission plateforme de 15%.
 
-## 8. Module Feed Social (v1.0)
+## 8. Module Feed Social / Social Commerce (v1.0)
 
-- Publication de posts par les vendors et influenceurs.
-- Likes et commentaires (guest-first).
-- Sessions live externes.
-- Scoring du feed basé sur l'engagement.
+- Feed social **TikTok-style** avec onglets : Tous, Vidéos, Lives, Produits, Sponsorisé.
+- Posts par vendors et influenceurs liés à des produits ou campagnes.
+- Types de posts : promo, showcase, UGC, live preview, standalone.
+- Likes et commentaires **guest-first** (sans compte obligatoire, via device hash).
+- Sessions live externes (TikTok, Instagram, Facebook, YouTube, Snapchat) avec produit associé.
+- Achat direct depuis le feed via drawer produit / checkout.
+- Scoring du feed basé sur l'engagement, le live, le budget sponsorisé et la fraîcheur.
+- API publique `/api/v1/feed` accessible sans authentification.
 
 ## 9. Module KYC et Sécurité
 
@@ -113,15 +117,20 @@ Ce document détaille les fonctionnalités de Mantota v1.0, déployées en produ
 - Système de parrainage avec récompense.
 - Suivi des conversions par filleul.
 
-## 13. Roadmap IA (v2.0)
+## 13. Roadmap IA (v2.1) — OD IA
 
-- Recommandation de créateurs pour les campagnes.
-- Prédiction de performance des campagnes.
-- Modération automatique des contenus.
-- Vérification automatique des documents KYC.
-- Assistant IA pour les utilisateurs.
-- Détection de fraudes et anomalies.
-- Analyse prédictive des tendances de consommation.
+Mantota intégrera **OD IA**, l'intelligence artificielle commerciale souveraine d'OD Systeme.
+
+- **Assistant commercial conversationnel** : aide à la création de campagnes, de boutiques et de fiches produits.
+- **Commande vocale par IA** : l'utilisateur décrit son besoin, OD IA sélectionne le produit/vendeur, remplit le panier et initie le paiement Mobile Money.
+- **WhatsApp vocal** : accessible aux personnes analphabètes — vente et achat par messages vocaux.
+- **Guide marché / commerce local** : orientation vers les vendeurs et produits disponibles près de l'utilisateur.
+- **Avis et comparaison produits par IA** : score qualité/prix, détection d'arnaques, recommandations.
+- **Matching créateur / campagne** : recommandation des influenceurs pertinents.
+- **Prédiction de performance** : estimation du ROI et du prix optimal.
+- **Modération automatique** : contenus, livrables UGC et documents KYC.
+- **Détection de fraudes et anomalies** : clics, transactions, comportements suspects.
+- **Analyse prédictive des tendances** : produits et créateurs émergents.
 
 ---
 

@@ -41,10 +41,11 @@ La **version 1.0 est en production** sur [mantota.com](https://mantota.com) avec
 Mantota combine :
 - Une **marketplace** de campagnes publicitaires CPC entre annonceurs et influenceurs.
 - Un **module e-commerce** avec escrow et paiement Mobile Money.
+- Un **feed social / social commerce** (TikTok-style) avec posts, likes, commentaires guest-first et lives liés aux produits.
 - Des **studios UGC** pour la production de contenu sponsorisé.
 - Un **système KYC** et de scoring pour la confiance entre acteurs.
 - Un **wallet intégré** avec dépôts, retraits et commissions.
-- Une **roadmap IA** pour le matching, le scoring et la modération automatique.
+- Une **roadmap IA** pilotée par **OD IA**, l'intelligence artificielle commerciale souveraine d'OD Systeme.
 
 ---
 
@@ -87,6 +88,13 @@ Mantota propose un **écosystème unifié** qui répond à ces défis :
 - **Mantota Studios (VIP)** : vente de services UGC (vidéos humaines, vidéos pub IA).
 - **Retraits** : via Mobile Money (FedaPay, PayDunya, FeexPay).
 - **Parrainage** : 500 FCFA par filleul inscrit.
+
+### Social Commerce
+- **Feed social TikTok-style** : posts produits, vidéos, lives, onglets (Tous, Vidéos, Lives, Produits, Sponsorisé).
+- **Interaction guest-first** : likes et commentaires sans création de compte.
+- **Achat direct depuis le feed** : produit lié au post avec redirection boutique / checkout.
+- **Lives externes** : intégration TikTok, Instagram, Facebook, YouTube, Snapchat avec produit associé.
+- **Scoring du feed** : algorithme basé sur engagement, fraîcheur, live et budget sponsorisé.
 
 ### Pour l'Administration
 - **Dashboard KPI** : utilisateurs, dépôts, retraits, profits en temps réel.
@@ -146,10 +154,10 @@ Pour plus de détails, consulter [`docs/architecture.md`](docs/architecture.md).
 
 | Phase | Objectif | Statut |
 | :--- | :--- | :--- |
-| **v1.0** | Fondation, authentification, KYC, wallet, campagnes CPC, e-commerce, UGC | ✅ En production |
+| **v1.0** | Fondation, authentification, KYC, wallet, campagnes CPC, e-commerce, UGC, social commerce | ✅ En production |
 | **v1.x** | Stabilisation, optimisations, 120+ utilisateurs actifs | ✅ En cours |
 | **v2.0** | Scalabilité, migration VPS/cloud, refonte UX, API publique | En développement |
-| **v2.1** | Intelligence artificielle : matching, scoring, modération, assistant | À venir |
+| **v2.1** | OD IA : assistant commercial souverain, matching, scoring, modération, voix/WhatsApp | À venir |
 | **v2.2** | Expansion régionale (CI, Sénégal, Togo, Cameroun) | À venir |
 
 Consulter [`ROADMAP.md`](ROADMAP.md) et [`docs/ai-roadmap.md`](docs/ai-roadmap.md) pour le détail.
