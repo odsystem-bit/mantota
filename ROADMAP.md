@@ -1,47 +1,56 @@
 # Roadmap Mantota
 
-Cette feuille de route présente les grandes étapes de développement de Mantota. Elle est évolutive et s'adapte aux retours du marché.
+Cette feuille de route présente les grandes étapes de développement de Mantota, de la v1.0 en production à la v2.0 en développement.
 
-## Phase 1 — Fondation technique
+---
 
-**Objectif** : poser les bases sécurisées et scalables de la plateforme.
+## v1.0 — Production
+
+**Objectif** : lancer la première version opérationnelle.
 
 - [x] Structure du dépôt public et documentation initiale
-- [ ] Authentification multi-rôles (Admin, Vendor, Influencer)
-- [ ] KYC et vérification des identités
-- [ ] Wallet intégré avec historique des transactions
-- [ ] Tableau de bord par rôle
+- [x] Authentification multi-rôles (Admin, Vendor, Influencer)
+- [x] KYC et vérification des identités
+- [x] Wallet intégré avec historique des transactions
+- [x] Tableau de bord par rôle
+- [x] Création et gestion de campagnes publicitaires CPC
+- [x] Postulation des influenceurs aux campagnes
+- [x] Génération et suivi des SmartLinks
+- [x] Paiement Mobile Money multigateway
+- [x] E-commerce avec escrow
+- [x] Studio UGC pour les créateurs VIP
+- [x] Feed social avec likes, commentaires, lives
+- [x] Programme d'ambassadeurs et de parrainage
+- [x] Déploiement en production sur [mantota.com](https://mantota.com)
 
-## Phase 2 — Campagnes et marketplace
+---
 
-**Objectif** : connecter annonceurs et influenceurs.
+## v1.x — Stabilisation
 
-- [ ] Création et gestion de campagnes publicitaires
-- [ ] Postulation des influenceurs aux campagnes
-- [ ] Génération et suivi des liens de promotion (SmartLink)
-- [ ] Analytics des performances
-- [ ] Système de notation et de réputation
+**Objectif** : pérenniser la production et corriger les problèmes de scalabilité.
 
-## Phase 3 — E-commerce avec escrow
+- [ ] Migration MySQL optimisée et Redis
+- [ ] Remplacement du driver de queue DB par Redis
+- [ ] Correction des bugs remontés par les utilisateurs
+- [ ] Amélioration de la performance sous charge
+- [ ] Documentation métier et guides utilisateurs
 
-**Objectif** : sécuriser les transactions entre vendeurs et acheteurs.
+---
 
-- [ ] Boutique produit par vendeur
-- [ ] Paiement Mobile Money multigateway
-- [ ] Escrow et validation des livraisons
-- [ ] Suivi des commandes et litiges
-- [ ] Commission et frais de plateforme
+## v2.0 — Scalabilité et refonte
 
-## Phase 4 — Studio UGC
+**Objectif** : préparer Mantota à la croissance régionale.
 
-**Objectif** : produire du contenu sponsorisé à la demande.
+- [ ] Migration vers VPS/cloud (Contabo, AWS, DigitalOcean)
+- [ ] Load balancing et CDN
+- [ ] Refonte UX et mobile-first
+- [ ] API publique documentée (REST/GraphQL)
+- [ ] CI/CD automatisé
+- [ ] Monitoring et alerting
 
-- [ ] Création de studios UGC
-- [ ] Commande de contenu auprès des créateurs
-- [ ] Gestion des livrables et validations
-- [ ] Tarification et paiements automatisés
+---
 
-## Phase 5 — Intelligence artificielle
+## v2.1 — Intelligence artificielle
 
 **Objectif** : automatiser, recommander et sécuriser.
 
@@ -49,15 +58,17 @@ Cette feuille de route présente les grandes étapes de développement de Mantot
 - [ ] Scoring des campagnes et prédiction de performance
 - [ ] Modération automatique des contenus et KYC
 - [ ] Assistant IA pour les vendeurs et influenceurs
-- [ ] Analyse prédictive des tendances locales
+- [ ] Détection de fraudes avancée
 
-## Phase 6 — Expansion et API publique
+---
 
-**Objectif** : ouvrir la plateforme et étendre son impact.
+## v2.2 — Expansion régionale
 
-- [ ] API publique documentée
+**Objectif** : ouvrir la plateforme à d'autres marchés.
+
+- [ ] Déploiement en Côte d'Ivoire, Sénégal, Togo, Cameroun
+- [ ] Adaptation aux devises et réglementations locales
 - [ ] Intégrations tierces (e-commerce, CRM, analytics)
-- [ ] Expansion vers d'autres pays de l'Afrique de l'Ouest
 - [ ] Programme d'ambassadeurs et de partenariats
 
 ---

@@ -2,9 +2,11 @@
 
 Ce document présente la vision et les étapes d'intégration de l'intelligence artificielle dans Mantota.
 
-> **Statut** : Document de planification. Les fonctionnalités IA seront déployées progressivement à partir de la Phase 5 du produit.
-
 ---
+
+## Contexte
+
+Mantota v1.0 est en production sur [mantota.com](https://mantota.com) avec environ 120 utilisateurs actifs. Les fonctionnalités IA sont planifiées pour la **v2.1**, après la migration vers une infrastructure scalable en **v2.0**.
 
 ## Vision IA
 
@@ -88,18 +90,24 @@ L'objectif de Mantota est d'utiliser l'intelligence artificielle pour :
 | Vision | OpenAI Vision / CLIP | Modération des images et vidéos |
 | OCR | Tesseract / AWS Textract | Extraction KYC |
 | ML | Python, scikit-learn, FastAPI | Scoring, prédiction, fraude |
-| Données | MySQL, exports analytics | Entraînement et inférence |
+| Données | MySQL / PostgreSQL, exports analytics | Entraînement et inférence |
 | Infrastructure | Docker, serveur dédié | Hébergement des services IA |
 
 ---
 
 ## Phases de déploiement
 
-### Phase 1 — Fondations (Mois 1-6)
+### Phase 0 — Préparation infrastructure (v2.0)
+
+- Migration vers VPS/cloud
+- Mise en place d'un pipeline de collecte et d'export de données
+- Définition des métriques et indicateurs de performance
+
+### Phase 1 — Fondations IA (Mois 1-6)
 
 - Collecte structurée des données
-- Mise en place d'un pipeline d'export
-- Définition des indicateurs de performance
+- Anonymisation et conformité
+- Choix des modèles et APIs
 
 ### Phase 2 — Recommandation et scoring (Mois 6-12)
 
@@ -133,7 +141,8 @@ L'objectif de Mantota est d'utiliser l'intelligence artificielle pour :
 
 ## Prochaines étapes
 
-- [ ] Définir les jeux de données nécessaires
+- [ ] Finaliser la migration infrastructure v2.0
+- [ ] Définir le pipeline de collecte et de traitement des données
 - [ ] Choisir les modèles et les APIs
 - [ ] Concevoir l'architecture des services IA
 - [ ] Mettre en place un environnement de test

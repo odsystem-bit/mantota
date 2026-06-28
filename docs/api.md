@@ -1,20 +1,22 @@
 # API Mantota
 
-Ce document décrit l'API publique de Mantota. Il est en cours de rédaction et sera enrichi au fur et à mesure du développement.
-
-> **Statut** : Version préliminaire. Les endpoints, formats et authentification sont susceptibles d'évoluer.
+Ce document décrit les API de Mantota v1.0 (internes) et la roadmap de l'API publique v2.0.
 
 ---
 
 ## Introduction
 
-L'API Mantota permet aux développeurs et partenaires d'intégrer la plateforme dans leurs propres outils. Elle repose sur une architecture RESTful avec authentification par tokens.
+Mantota v1.0 expose une API REST interne utilisée par le frontend Inertia.js/Vue 3. L'API publique v2.0 permettra aux développeurs et partenaires d'intégrer la plateforme dans leurs propres outils.
 
 ---
 
-## Authentification
+## Authentification v1.0
 
-> **À compléter** : méthode d'authentification (OAuth 2.0, API Key, Sanctum, etc.).
+Les utilisateurs du frontend sont authentifiés via des **sessions Laravel** sécurisées. Chaque rôle (Admin, Vendor, Influencer) dispose d'un guard dédié.
+
+## Authentification v2.0 (publique)
+
+L'API publique utilisera **Laravel Sanctum** avec des tokens Bearer.
 
 ```http
 Authorization: Bearer {token}
@@ -22,7 +24,7 @@ Authorization: Bearer {token}
 
 ---
 
-## En-têtes communs
+## En-têtes communs v2.0
 
 ```http
 Content-Type: application/json
@@ -32,9 +34,9 @@ Authorization: Bearer {token}
 
 ---
 
-## Versionnement
+## Versionnement v2.0
 
-L'API est versionnée dans l'URL :
+L'API publique sera versionnée dans l'URL :
 
 ```
 https://api.mantota.com/v1/
@@ -42,63 +44,95 @@ https://api.mantota.com/v1/
 
 ---
 
-## Endpoints
+## Endpoints v1.0 (internes)
 
 ### Authentification
 
 | Méthode | Endpoint | Description |
 | :--- | :--- | :--- |
-| POST | `/v1/auth/register` | Créer un compte |
-| POST | `/v1/auth/login` | Se connecter |
-| POST | `/v1/auth/logout` | Se déconnecter |
-| GET | `/v1/auth/me` | Profil connecté |
+| POST | `/api/auth/login` | Se connecter |
+| POST | `/api/auth/register` | Créer un compte |
+| GET | `/api/auth/me` | Profil connecté |
+| PUT | `/api/auth/profile` | Mettre à jour le profil |
+| POST | `/api/auth/logout` | Se déconnecter |
 
 ### Campagnes
 
 | Méthode | Endpoint | Description |
 | :--- | :--- | :--- |
-| GET | `/v1/campaigns` | Lister les campagnes |
-| GET | `/v1/campaigns/{id}` | Détails d'une campagne |
-| POST | `/v1/campaigns` | Créer une campagne |
-| PUT | `/v1/campaigns/{id}` | Mettre à jour une campagne |
-| DELETE | `/v1/campaigns/{id}` | Supprimer une campagne |
-| POST | `/v1/campaigns/{id}/apply` | Postuler à une campagne |
+| GET | `/api/campaigns` | Lister les campagnes disponibles |
+| GET | `/api/campaigns/{campaign}` | Détails d'une campagne |
+| POST | `/api/campaigns/{campaign}/promote` | Générer un SmartLink |
 
-### Produits
+### Feed
 
 | Méthode | Endpoint | Description |
 | :--- | :--- | :--- |
-| GET | `/v1/products` | Lister les produits |
-| GET | `/v1/products/{id}` | Détails d'un produit |
-| POST | `/v1/products` | Créer un produit |
-| PUT | `/v1/products/{id}` | Mettre à jour un produit |
-| DELETE | `/v1/products/{id}` | Supprimer un produit |
-
-### Commandes
-
-| Méthode | Endpoint | Description |
-| :--- | :--- | :--- |
-| GET | `/v1/orders` | Lister les commandes |
-| GET | `/v1/orders/{id}` | Détails d'une commande |
-| POST | `/v1/orders` | Passer une commande |
-| GET | `/v1/orders/track/{token}` | Suivre une commande publiquement |
+| GET | `/api/feed` | Récupérer le feed social |
+| POST | `/api/feed/{post}/view` | Enregistrer une vue |
+| POST | `/api/feed/{post}/like` | Liker un post (guest-first) |
+| GET | `/api/feed/{post}/comments` | Lister les commentaires |
+| POST | `/api/feed/{post}/comments` | Commenter un post |
 
 ### Wallet
 
 | Méthode | Endpoint | Description |
 | :--- | :--- | :--- |
-| GET | `/v1/wallet` | Solde du wallet |
-| GET | `/v1/wallet/transactions` | Historique des transactions |
-| POST | `/v1/wallet/deposit` | Déposer des fonds |
-| POST | `/v1/wallet/withdraw` | Retirer des fonds |
+| GET | `/api/wallet` | Solde et résumé |
+| GET | `/api/wallet/transactions` | Historique des transactions |
+| POST | `/api/wallet/withdraw` | Demander un retrait |
+| POST | `/api/wallet/deposit` | Effectuer un dépôt |
 
-### Influencers
+### Commandes
 
 | Méthode | Endpoint | Description |
 | :--- | :--- | :--- |
+| GET | `/api/orders` | Lister les commandes |
+| GET | `/api/orders/{order}` | Détails d'une commande |
+| POST | `/api/orders/guest` | Commander en tant qu'invité |
+| GET | `/api/orders/track/{token}` | Suivre une commande publiquement |
+
+### KYC
+
+| Méthode | Endpoint | Description |
+| :--- | :--- | :--- |
+| GET | `/api/kyc` | Statut KYC |
+| POST | `/api/kyc` | Soumettre les documents KYC |
+
+### Notifications
+
+| Méthode | Endpoint | Description |
+| :--- | :--- | :--- |
+| GET | `/api/notifications` | Lister les notifications |
+| POST | `/api/notifications/{id}/read` | Marquer comme lue |
+| POST | `/api/notifications/read-all` | Tout marquer comme lu |
+
+### Produits et Créateurs
+
+| Méthode | Endpoint | Description |
+| :--- | :--- | :--- |
+| GET | `/api/products` | Lister les produits |
+| GET | `/api/products/{product}` | Détails d'un produit |
+| GET | `/api/creators/{slug}` | Profil public d'un créateur |
+
+---
+
+## Endpoints v2.0 (publique — roadmap)
+
+| Méthode | Endpoint | Description |
+| :--- | :--- | :--- |
+| GET | `/v1/campaigns` | Lister les campagnes publiques |
+| GET | `/v1/campaigns/{id}` | Détails d'une campagne |
+| POST | `/v1/campaigns/{id}/apply` | Postuler à une campagne |
+| GET | `/v1/products` | Lister les produits |
+| GET | `/v1/products/{id}` | Détails d'un produit |
+| POST | `/v1/orders` | Créer une commande |
+| GET | `/v1/orders/track/{token}` | Suivre une commande |
+| GET | `/v1/wallet` | Solde et transactions |
+| POST | `/v1/wallet/deposit` | Déposer des fonds |
+| POST | `/v1/wallet/withdraw` | Retirer des fonds |
 | GET | `/v1/creators` | Lister les créateurs |
 | GET | `/v1/creators/{slug}` | Profil public d'un créateur |
-| GET | `/v1/creators/{id}/services` | Services UGC proposés |
 
 ---
 
@@ -119,11 +153,11 @@ https://api.mantota.com/v1/
 
 ## Pagination
 
-> **À compléter** : format de pagination des réponses listes.
+> Les réponses listes v2.0 supporteront la pagination standard Laravel avec `data` et `meta`.
 
 ---
 
-## Exemple de requête
+## Exemple de requête v2.0
 
 ```bash
 curl -X GET https://api.mantota.com/v1/campaigns \
@@ -133,7 +167,7 @@ curl -X GET https://api.mantota.com/v1/campaigns \
 
 ---
 
-## Exemple de réponse
+## Exemple de réponse v2.0
 
 ```json
 {
@@ -159,14 +193,15 @@ curl -X GET https://api.mantota.com/v1/campaigns \
 
 ## Limites d'utilisation
 
-> **À compléter** : rate limits et quotas par type de compte.
+> Les rate limits et quotas par type de compte seront définis dans la v2.0.
 
 ---
 
 ## Prochaines étapes
 
-- [ ] Définir les schémas complets de requête et réponse
-- [ ] Rédiger les spécifications d'authentification
-- [ ] Documenter les webhooks
-- [ ] Publier une collection Postman
+- [ ] Documenter les schémas complets de requête et réponse v1.0
+- [ ] Rédiger les spécifications d'authentification Sanctum v2.0
+- [ ] Documenter les webhooks et signatures des paiements
+- [ ] Publier une collection Postman publique
+- [ ] Définir la rate limiting et les plans d'API
 - [ ] Mettre en place une documentation interactive (Swagger / Scribe)

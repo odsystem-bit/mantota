@@ -7,8 +7,8 @@
   <h1>Mantota</h1>
   <p><strong>Plateforme de marketing d'influence et d'e-commerce intelligent pour l'Afrique de l'Ouest</strong></p>
   <p>
-    <img src="https://img.shields.io/badge/Status-En%20développement-2A8A1A?style=flat-square" alt="Status" />
-    <img src="https://img.shields.io/badge/Version-0.1.0-1D3C6E?style=flat-square" alt="Version" />
+    <img src="https://img.shields.io/badge/Status-En%20production%20%28v1.0%29%20%2F%20v2.0%20en%20dev-2A8A1A?style=flat-square" alt="Status" />
+    <img src="https://img.shields.io/badge/Version-1.0.0-1D3C6E?style=flat-square" alt="Version" />
     <img src="https://img.shields.io/badge/License-MIT-F5A800?style=flat-square" alt="License" />
     <img src="https://img.shields.io/badge/Afrique%20de%20l'Ouest-FCFA-1D3C6E?style=flat-square" alt="Marché" />
   </p>
@@ -34,14 +34,17 @@
 
 ## Présentation
 
-**Mantota** est une plateforme technologique dédiée au marketing d'influence et à l'e-commerce en Afrique de l'Ouest francophone. Elle connecte annonceurs, créateurs de contenu et consommateurs dans un écosystème sécurisé, transparent et axé sur l'impact local.
+**Mantota** est le premier réseau publicitaire 100% performance en Afrique francophone, connectant vendeurs (annonceurs) et créateurs de contenu (influenceurs) via un modèle basé sur le **Coût Par Clic (CPC)** et la **Commission Par Vente (CPA)**.
+
+La **version 1.0 est en production** sur [mantota.com](https://mantota.com) avec environ **120 utilisateurs actifs**. La **version 2.0** est en développement pour renforcer la scalabilité, l'IA et l'expérience utilisateur.
 
 Mantota combine :
-- Une **marketplace** de campagnes publicitaires entre annonceurs et influenceurs.
+- Une **marketplace** de campagnes publicitaires CPC entre annonceurs et influenceurs.
 - Un **module e-commerce** avec escrow et paiement Mobile Money.
-- Un **studio UGC** pour la production de contenu sponsorisé.
+- Des **studios UGC** pour la production de contenu sponsorisé.
 - Un **système KYC** et de scoring pour la confiance entre acteurs.
-- Une **roadmap IA** pour l'automatisation, la recommandation et l'analyse de performance.
+- Un **wallet intégré** avec dépôts, retraits et commissions.
+- Une **roadmap IA** pour le matching, le scoring et la modération automatique.
 
 ---
 
@@ -61,8 +64,8 @@ Les créateurs de contenu, quant à eux, manquent d'une plateforme structurée p
 
 Mantota propose un **écosystème unifié** qui répond à ces défis :
 
-- **Pour les annonceurs (Vendors)** : lancer des campagnes, choisir des créateurs, suivre les performances et vendre des produits via une boutique intégrée.
-- **Pour les influenceurs (Influencers)** : postuler à des campagnes, générer des liens de promotion, gérer un wallet et proposer des services UGC.
+- **Pour les Vendors (annonceurs)** : créer des campagnes CPC, fixer le budget, choisir les pays et niches, suivre les performances en temps réel et vendre des produits via une boutique intégrée.
+- **Pour les Influencers (créateurs)** : postuler à des campagnes, générer des SmartLinks trackés, gérer un wallet, proposer des services UGC et bénéficier d'un programme de parrainage.
 - **Pour les consommateurs** : acheter des produits locaux en toute confiance avec un système de paiement sécurisé et un suivi de commandes.
 - **Pour l'administration** : un panneau de contrôle sécurisé pour valider les KYC, superviser les transactions et garantir le bon fonctionnement de la plateforme.
 
@@ -70,28 +73,27 @@ Mantota propose un **écosystème unifié** qui répond à ces défis :
 
 ## Fonctionnalités principales
 
-- **Campagnes publicitaires** : création, gestion et suivi de campagnes CPC et CPM.
-- **E-commerce avec escrow** : achats sécurisés entre vendeurs et acheteurs.
-- **Paiements Mobile Money** : intégration des principales solutions locales (Feexpay, Moneroo, etc.).
-- **Wallet intégré** : dépôts, retraits, commissions et historique des transactions.
-- **Studio UGC** : commande de contenu sponsorisé auprès de créateurs.
-- **KYC et scoring** : vérification des identités et évaluation des utilisateurs.
-- **Système de parrainage** : croissance organique via les ambassadeurs.
-- **Notifications multicanal** : SMS, WhatsApp, e-mail et push.
-- **Analytics** : tableaux de bord de performance pour annonceurs et influenceurs.
-- **Roadmap IA** : recommandation de créateurs, scoring de campagnes, modération automatique.
+### Pour les Vendors
+- **Campagnes CPC** : création, budget, prix par clic (min. 25 FCFA), ciblage par pays/niche/tier.
+- **Marketplace e-commerce** : boutique, catalogue, stock, galerie d'images, livraison.
+- **Tableau de bord en temps réel** : clics payés, clics totaux, conversions, budget restant.
+- **Anti-fraude** : détection de bots, filtrage IP dupliquées, géo-vérification.
+- **Escrow** : fonds bloqués jusqu'à confirmation de livraison.
 
----
+### Pour les Influencers
+- **SmartLinks** : liens trackés uniques avec expiration 48h.
+- **Dashboard personnalisé** : campagnes filtrées par niche et tier (Bronze, Argent, Or).
+- **Wallet** : solde disponible, solde en attente, solde séquestre.
+- **Mantota Studios (VIP)** : vente de services UGC (vidéos humaines, vidéos pub IA).
+- **Retraits** : via Mobile Money (FedaPay, PayDunya, FeexPay).
+- **Parrainage** : 500 FCFA par filleul inscrit.
 
-## Architecture générale
-
-Mantota repose sur une architecture moderne, modulaire et scalable :
-
-- **Backend** : API REST sécurisée avec Laravel, base de données MySQL, gestion des files d'attente et WebSockets.
-- **Frontend** : interface réactive avec Vue 3, Inertia.js, TailwindCSS et Vite.
-- **Paiements** : intégration multi-gateway avec support du Mobile Money et de l'escrow.
-- **IA / Analytics** : modules d'analyse de données, scoring et recommandation (roadmap).
-- **Infrastructure** : prête pour le déploiement sur hébergement mutualisé et évolutive vers le cloud.
+### Pour l'Administration
+- **Dashboard KPI** : utilisateurs, dépôts, retraits, profits en temps réel.
+- **Modération KYC** : vérification d'identité avec robot + validation manuelle.
+- **Ghost Mode** : impersonation sécurisée pour le support.
+- **Paramètres configurables** : 20+ paramètres (commissions, seuils, frais).
+- **Sécurité** : whitelist IP, audit logs, rate limiting.
 
 Pour plus de détails, consulter :
 - [`docs/architecture.md`](docs/architecture.md)
@@ -103,12 +105,27 @@ Pour plus de détails, consulter :
 
 ---
 
+## Architecture générale
+
+Mantota repose sur une architecture monolithique modulaire, moderne et évolutive :
+
+- **Backend** : Laravel 12, API REST, base de données MySQL, Redis (cache/sessions/queues), WebSockets via Laravel Reverb.
+- **Frontend** : Vue 3 avec Inertia.js, TailwindCSS v3, Vite 7, Ziggy.
+- **Paiements** : intégration multi-gateway (FedaPay, PayDunya, FeexPay, Moneroo) avec Mobile Money.
+- **Médias** : Cloudinary pour le stockage des images et vidéos.
+- **Infrastructure** : hébergement mutualisé Hostinger en production, migration vers VPS/cloud prévue pour la v2.0.
+
+Pour plus de détails, consulter [`docs/architecture.md`](docs/architecture.md).
+
+---
+
 ## Technologies utilisées
 
 ### Backend
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 
 ### Frontend
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
@@ -121,6 +138,7 @@ Pour plus de détails, consulter :
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
 
 ---
 
@@ -128,12 +146,11 @@ Pour plus de détails, consulter :
 
 | Phase | Objectif | Statut |
 | :--- | :--- | :--- |
-| **Phase 1** | Fondation technique, authentification, KYC, wallet | En cours |
-| **Phase 2** | Campagnes publicitaires, marketplace influenceurs | À venir |
-| **Phase 3** | E-commerce avec escrow et paiements Mobile Money | À venir |
-| **Phase 4** | Studio UGC et commandes de contenu | À venir |
-| **Phase 5** | Intelligence artificielle : recommandation, scoring, modération | À venir |
-| **Phase 6** | Expansion régionale et API publique | À venir |
+| **v1.0** | Fondation, authentification, KYC, wallet, campagnes CPC, e-commerce, UGC | ✅ En production |
+| **v1.x** | Stabilisation, optimisations, 120+ utilisateurs actifs | ✅ En cours |
+| **v2.0** | Scalabilité, migration VPS/cloud, refonte UX, API publique | En développement |
+| **v2.1** | Intelligence artificielle : matching, scoring, modération, assistant | À venir |
+| **v2.2** | Expansion régionale (CI, Sénégal, Togo, Cameroun) | À venir |
 
 Consulter [`ROADMAP.md`](ROADMAP.md) et [`docs/ai-roadmap.md`](docs/ai-roadmap.md) pour le détail.
 
@@ -152,13 +169,14 @@ Consulter [`ROADMAP.md`](ROADMAP.md) et [`docs/ai-roadmap.md`](docs/ai-roadmap.m
 
 ## Démo
 
-Une démo publique sera disponible prochainement dans le dossier [`demo/`](demo/).
+- **Site en production** : [mantota.com](https://mantota.com)
+- **Démo et maquettes** : disponibles prochainement dans le dossier [`demo/`](demo/).
 
 ---
 
 ## Liens officiels
 
-- **Site web** : [À compléter](https://)
+- **Site web** : [mantota.com](https://mantota.com)
 - **Documentation** : [`docs/`](docs/)
 - **Portfolio** : [stanislas-nouemou](https://github.com/odsystem-bit/stanislas-nouemou)
 - **GitHub** : [mantota](https://github.com/odsystem-bit/mantota)
@@ -169,7 +187,7 @@ Une démo publique sera disponible prochainement dans le dossier [`demo/`](demo/
 
 Pour toute question, partenariat ou opportunité d'investissement :
 
-- **Email** : [À compléter](mailto:)
+- **Email** : [contact@mantota.com](mailto:contact@mantota.com)
 - **LinkedIn** : [À compléter](https://linkedin.com/in/)
 - **GitHub** : [@odsystem-bit](https://github.com/odsystem-bit)
 

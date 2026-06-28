@@ -2,13 +2,11 @@
 
 Ce document présente le modèle économique de Mantota, son marché cible, ses revenus et sa stratégie de croissance.
 
-> **Statut** : Première version. Les chiffres et projections sont des placeholders à affiner.
-
 ---
 
 ## Vision
 
-Mantota vise à devenir la plateforme de référence du marketing d'influence et de l'e-commerce en Afrique de l'Ouest francophone, en offrant des outils adaptés aux réalités locales.
+Mantota vise à devenir le réseau publicitaire 100% performance de référence en Afrique francophone, en connectant vendeurs et créateurs de contenu via un modèle transparent basé sur les résultats réels.
 
 ---
 
@@ -16,14 +14,24 @@ Mantota vise à devenir la plateforme de référence du marketing d'influence et
 
 ### Marché primaire
 
-- **Afrique de l'Ouest francophone** : Bénin, Côte d'Ivoire, Sénégal, Burkina Faso, Mali, Togo, Niger, Guinée, Cameroun, Gabon.
-- **Utilisateurs** : PME, marques locales, créateurs de contenu, consommateurs.
+- **Afrique francophone** : Bénin, Côte d'Ivoire, Sénégal, Togo, Cameroun, Gabon, Burkina Faso, Mali, Guinée, Niger.
+- **Utilisateurs** : PME, marques locales, e-commerçants, créateurs de contenu, consommateurs.
 
 ### Segments cibles
 
-- **Vendors** : PME, e-commerçants, marques cherchant à promouvoir des produits.
-- **Influencers** : créateurs de contenu avec audience locale (micro, macro, nano).
+- **Vendors** : PME et e-commerçants cherchant à promouvoir des produits avec paiement à la performance.
+- **Influencers** : créateurs de contenu (nano, micro, macro) avec audience locale.
 - **Consommateurs** : acheteurs en ligne souhaitant des produits locaux avec paiement Mobile Money.
+
+### Taille du marché
+
+| Indicateur | Valeur |
+| :--- | :--- |
+| Utilisateurs internet en Afrique (2025) | ~570 millions |
+| Utilisateurs réseaux sociaux Afrique francophone | ~80 millions |
+| Marché pub digitale Afrique subsaharienne | ~5 milliards USD |
+| Croissance annuelle | +20-25% |
+| E-commerce Afrique (2030) | ~75 milliards USD |
 
 ---
 
@@ -31,59 +39,84 @@ Mantota vise à devenir la plateforme de référence du marketing d'influence et
 
 ### Pour les Vendors
 
-- Accès à un réseau de créateurs locaux vérifiés
-- Outils de suivi de performance des campagnes
-- E-commerce sécurisé avec escrow et Mobile Money
-- Réduction des frictions dans la collaboration influenceur
+- Paiement uniquement aux résultats (CPC/CPA vérifiés).
+- Accès à un réseau de créateurs locaux vérifiés.
+- Outils de suivi de performance en temps réel.
+- E-commerce sécurisé avec escrow et Mobile Money.
+- Anti-fraude intégré (KFactorEngine).
 
 ### Pour les Influencers
 
-- Monétisation structurée de l'audience
-- Accès à des campagnes adaptées à leur niche
-- Gestion professionnelle des collaborations
-- Paiements rapides et transparents
+- Monétisation structurée de l'audience.
+- Accès à des campagnes adaptées à leur niche et leur tier.
+- Gestion professionnelle des collaborations.
+- Paiements rapides et transparents via Mobile Money.
 
 ### Pour les Consommateurs
 
-- Achat local simplifié
-- Paiement Mobile Money
-- Sécurisation des transactions via escrow
-- Suivi des commandes en temps réel
+- Achat local simplifié.
+- Paiement Mobile Money.
+- Sécurisation des transactions via escrow.
+- Suivi des commandes en temps réel.
 
 ---
 
 ## Modèle de revenus
 
-| Source de revenu | Description | Taux indicatif |
+Mantota génère des revenus sur chaque transaction via 5 flux principaux :
+
+| Source de revenu | Description | Taux |
 | :--- | :--- | :--- |
-| Commission sur campagnes | Prélèvement sur le budget campagne | 20% |
-| Commission sur ventes | Prélèvement sur les transactions e-commerce | 20% |
-| Frais de retrait | Frais prélevés sur les retraits des utilisateurs | 20% (min 1 000 FCFA) |
-| Frais Studio UGC | Commission sur les commandes de contenu | 15% |
-| Services premium | Abonnements et fonctionnalités avancées | À définir |
-| API et partenariats | Accès API et intégrations tierces | À définir |
+| Commission sur campagnes | Prélèvement sur le budget campagne | 5% |
+| Commission sur retraits | Frais sur les retraits des influenceurs | 20% |
+| Markup sur dépôts | Commission sur les dépôts vendeurs | 1.5% |
+| Commission UGC Studios | Commission sur les commandes de contenu | 15% |
+| Commission e-commerce | Commission sur les ventes marketplace | Variable |
+
+### Paramètres financiers clés
+
+| Paramètre | Valeur |
+| :--- | :--- |
+| Prix minimum par clic | 25 FCFA |
+| Retrait minimum | 1 000 FCFA |
+| Commission plateforme | 20% |
+| Frais studio UGC | 15% |
+| Markup dépôts | 1.5% |
+| Parrainage | 500 FCFA par filleul |
 
 ---
 
 ## Stratégie de croissance
 
-### Phase 1 : Acquisition locale
+### Phase 1 : Production et validation (v1.0) ✅
 
-- Lancement au Bénin avec un marché pilote.
-- Acquisition des premiers vendeurs et influenceurs.
-- Partenariats avec les gateways de paiement locaux.
+- Lancement de mantota.com au Bénin.
+- ~120 utilisateurs actifs.
+- Transactions réelles et retours utilisateurs.
 
-### Phase 2 : Expansion régionale
+### Phase 2 : Stabilisation et optimisation (v1.x)
 
-- Déploiement en Côte d'Ivoire et au Sénégal.
-- Adaptation aux devises et réglementations locales.
-- Programme d'ambassadeurs.
+- Migration MySQL optimisée et Redis.
+- Correction des bugs de scalabilité.
+- Documentation métier et support client.
 
-### Phase 3 : Automatisation et IA
+### Phase 3 : Scalabilité (v2.0)
+
+- Migration vers VPS/cloud.
+- Load balancing, CDN, monitoring.
+- API publique documentée.
+
+### Phase 4 : Automatisation et IA
 
 - Intégration de l'IA pour le matching et la modération.
 - API publique pour les intégrations tierces.
 - Scalabilité vers d'autres verticales.
+
+### Phase 5 : Expansion régionale
+
+- Déploiement en Côte d'Ivoire, Sénégal, Togo, Cameroun.
+- Adaptation aux devises et réglementations locales.
+- Programme d'ambassadeurs et partenariats.
 
 ---
 
