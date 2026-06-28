@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="24" fill="#1D3C6E"/>
+  <circle cx="60" cy="50" r="28" fill="#F5A800"/>
+  <path d="M28 96C28 78.327 42.327 64 60 64C77.673 64 92 78.327 92 96V100H28V96Z" fill="#F5A800"/>
+  <text x="60" y="110" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">MANTOTA</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <rect width="200" height="200" rx="16" fill="#F5F5F5"/>
+  <rect x="40" y="40" width="120" height="120" rx="12" fill="#FFFFFF" stroke="#1D3C6E" stroke-width="2"/>
+  <circle cx="100" cy="85" r="25" fill="#1D3C6E"/>
+  <path d="M55 150C55 127.909 72.909 110 95 110H105C127.091 110 145 127.909 145 150V155H55V150Z" fill="#1D3C6E"/>
+  <text x="100" y="180" font-family="Arial" font-size="12" fill="#1D3C6E" text-anchor="middle">UI Placeholder</text>
+</svg>

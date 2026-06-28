@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#EEF3FA"/>
+  <rect x="32" y="32" width="736" height="40" rx="8" fill="#1D3C6E"/>
+  <rect x="32" y="96" width="200" height="320" rx="8" fill="#D5E1F5"/>
+  <rect x="256" y="96" width="512" height="150" rx="8" fill="#FFFFFF"/>
+  <rect x="256" y="266" width="512" height="150" rx="8" fill="#FFFFFF"/>
+  <text x="400" y="220" font-family="Arial" font-size="24" fill="#1D3C6E" text-anchor="middle">Capture d'écran à venir</text>
+  <text x="400" y="340" font-family="Arial" font-size="18" fill="#7096D0" text-anchor="middle">Dashboard Mantota</text>
+</svg>
