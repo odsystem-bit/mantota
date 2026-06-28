@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/logo/logo-placeholder.svg" alt="Mantota Logo" width="120" height="120" />
+  <img src="assets/logo/WhatsApp Image 2026-05-12 at 10.57.22.jpeg" alt="Mantota Logo" width="120" height="120" />
   <h1>Mantota</h1>
   <p><strong>Plateforme de marketing d'influence et d'e-commerce intelligent pour l'Afrique de l'Ouest</strong></p>
   <p>
